@@ -136,7 +136,7 @@
             background-color: indianred;
             border-radius: 5px;
             width: 350px;
-            height: 560px;
+            height: 350px;
             margin-top: 50px;
             margin-left: 9%;
 
@@ -147,7 +147,7 @@
             background-color: cornflowerblue;
             border-radius: 5px;
             width: 350px;
-            height: 560px;
+            height: 350px;
             margin-top: 150px;
             margin-left: 13%;
 
@@ -158,7 +158,7 @@
             background-color: mediumpurple;
             border-radius: 5px;
             width: 350px;
-            height: 560px;
+            height: 350px;
             margin-top: 250px;
             margin-left: 13%;
 
@@ -210,6 +210,7 @@
             width: 250px;
             height: 250px;
             margin: auto;
+            margin-top: 20px;
         }
 
         #mouse-scroll {
@@ -380,7 +381,7 @@
 
 <!-- 상단부 헤더 이미지 태그 입니다-->
 <div>
-    <img class="header_img" style="width: 100%; height: 1150px;" src="image\header_black4.jpg"/>
+    <img class="header_img" style="width: 100%; height: 1150px;" src="static\image\header_black4.jpg"/>
 </div>
 <!-- 상단부 스크롤 버튼 태그 입니다 -->
 <a href="#">
@@ -406,19 +407,17 @@
     <!-- 중단부 인포 이미지_지역 태그 입니다 -->
     <div class="square_sel_loc">
 
-        <div class="info_text">
-            지역 골라보기
-        </div>
+
         <!-- 중단부 인포_지역 이미지 태그 입니다-->
         <div>
-            <img class="info_img" src="image\map.png"/>
+            <img class="info_img" src="static\image\map.png"/>
         </div>
 
         <!-- Default dropright button -->
         <div class="btn-group  dropright">
             <button id = "dropdownMenuButton" type="button" class="btn btn-secondary dropdown-toggle loc_dropR" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false"
-                    style="background-color: palevioletred; margin-top: 30px; font-family: 'Black Han Sans', sans-serif">
+                    style="background-color: palevioletred; margin-top: 30px; border-top-left-radius: 0; border-top-right-radius: 0; border: 0; font-family: 'Black Han Sans', sans-serif">
                 지역 고르기
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -433,26 +432,22 @@
                 <a class="dropdown-item" id="btn2" onclick="jeju()">제주특별자치도</a>
             </div>
         </div>
+
     </div>
 
     <!-- 중단부 인포 이미지_메뉴 태그 입니다 -->
     <div class="square_sel_men">
 
-
-        <div class="info_text">
-            메뉴 골라보기
-        </div>
-
         <!-- 중단부 인포_지역 이미지 태그 입니다-->
         <div>
-            <img class="info_img" src="image\pizza.png"/>
+            <img class="info_img" src="static\image\pizza.png"/>
         </div>
 
         <!-- Default dropright button -->
         <div class="btn-group dropright">
             <button type="button" class="btn btn-secondary dropdown-toggle loc_dropR" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false"
-                    style="background-color: dodgerblue; margin-top: 30px; font-family: 'Black Han Sans', sans-serif">
+                    style="background-color: dodgerblue; margin-top: 30px; border-top-left-radius: 0; border-top-right-radius: 0; border: 0; font-family: 'Black Han Sans', sans-serif">
                 메뉴 고르기
             </button>
             <div class="dropdown-menu">
@@ -472,19 +467,17 @@
     <!-- 중단부 인포 이미지_인기 태그 입니다 -->
     <div class="square_sel_rec">
 
-        <div class="info_text">
-            추천 태그
-        </div>
+
         <!-- 중단부 인포_지역 이미지 태그 입니다-->
         <div>
-            <img class="info_img" src="image\dev.png"/>
+            <img class="info_img" src="static\image\dev.png"/>
         </div>
         <!-- Default dropup button -->
         <!-- Default dropright button -->
         <div class="btn-group dropright">
             <button type="button" class="btn btn-secondary dropdown-toggle loc_dropR" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false"
-                    style="background-color: violet; margin-top: 30px; font-family: 'Black Han Sans', sans-serif">
+                    style="background-color: violet; margin-top: 30px; border-top-left-radius: 0; border-top-right-radius: 0; border: 0; font-family: 'Black Han Sans', sans-serif">
                 인기 태그
             </button>
             <div class="dropdown-menu">
