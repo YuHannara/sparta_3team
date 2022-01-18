@@ -16,10 +16,12 @@ db = client.sparta_3team
 ## URL 별로 함수명이 같거나,
 ## route('/') 등의 주소가 같으면 안됩니다.
 
-# index.html 불러오기
+# index_.html 불러오기
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('실험실.html')
+
+
 
 
 # DB작성(이름, 리뷰, 별점)
@@ -85,11 +87,11 @@ def get_datas():
       # print(dic)
       db.matjipjido.insert_one(dic)
    return rows
-
 # app.py를 run할때 Api를 새로 불러옵니다
 def insert_all():
     db.matjipjido.drop()  # matjipjido 콜렉션을 모두 지워줍니다.
     get_datas()
+
 
 insert_all()
 
@@ -100,6 +102,9 @@ def show_reviews():
     matjip_list = list(db.matjipjido.find({},{'_id': False}))
 
     return jsonify({'all_list': matjip_list})
+
+
+
 
 
 if __name__ == '__main__':
